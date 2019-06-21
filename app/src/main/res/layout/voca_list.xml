@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:orientation="vertical"
+    android:background="#fffcf5"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/voca_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24sp"
+        android:text="word"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/voca_example1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102sp"
+        android:text="ex1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/voca_example2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/voca_example1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="208sp"
+        android:text="ex2"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/voca_means"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="확인"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/voca_wordMean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220sp"
+        android:text="aaa"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/voca_examplemean1"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100sp"
+        android:text="m1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/voca_examplemean2"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_alignStart="@+id/voca_example1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16sp"
+        android:text="m2"
+        android:textSize="16sp" />
+
+</RelativeLayout>

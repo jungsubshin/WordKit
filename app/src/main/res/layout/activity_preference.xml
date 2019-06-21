@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:text="한번에 볼 페이지 수 (최대 20)"
+            style="@style/CategoryStyle" />
+        <!-- Input fields -->
+        <EditText
+            android:id="@+id/edit_page_count"
+            android:inputType="number"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:paddingRight="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:text="오답시 대기시간"
+            style="@style/CategoryStyle" />
+        <!-- Input fields -->
+            <Spinner
+                android:id="@+id/spinner_wrongdelay"
+                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="최초 학습시 대기시간" />
+        <!-- Input fields -->
+
+            <Spinner
+                android:id="@+id/spinner_studydelay"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="체크시 시간 배수" />
+        <!-- Input fields -->
+
+        <EditText
+            android:id="@+id/edit_correcttime"
+            android:inputType="numberDecimal"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:paddingRight="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="확신시 시간 배수" />
+        <!-- Input fields -->
+
+        <EditText
+            android:id="@+id/edit_allcorrecttime"
+            android:inputType="numberDecimal"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:paddingRight="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

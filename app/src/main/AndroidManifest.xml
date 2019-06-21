@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unknown.sub.wordkit">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.unknown.sub.wordkit.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unknown.sub.wordkit.VocaActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.unknown.sub.wordkit.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.unknown.sub.wordkit.MainActivity" />
+        </activity>
+        <activity android:name="com.unknown.sub.wordkit.FileListActivity"
+            android:label="파일목록" />
+        <activity android:name="com.unknown.sub.wordkit.CreateVocaActivity"
+            android:label="단어장 생성"/>
+        <activity android:name="com.unknown.sub.wordkit.VocaInfoActivity"
+            android:label="단어 학습"/>
+        <activity android:name="com.unknown.sub.wordkit.WordListActivity"
+            android:label="단어 목록"/>
+        <activity android:name="com.unknown.sub.wordkit.EditWordActivity"
+            android:label="단어 수정"/>
+        <activity android:name="com.unknown.sub.wordkit.HelpActivity"
+            android:label="도움말"/>
+        <activity android:name="com.unknown.sub.wordkit.PreferenceActivity"
+            android:label="환경설정"/>
+
+    </application>
+
+</manifest>

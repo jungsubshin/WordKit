@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/table_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="88sp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:background="#fffde7"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:gravity="center_vertical"
+        android:text="복습필요 : 0"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/study_count"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_alignBottom="@+id/table_list_item"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_vertical"
+        android:text="암기필요 : 0"
+        android:textColor="@android:color/black" />
+
+
+
+</RelativeLayout>
